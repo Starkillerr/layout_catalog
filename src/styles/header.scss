@@ -2,7 +2,7 @@
 
 .header {
   background-color: #fff;
-  padding: 0 40px;
+  padding-bottom: $padding-bottom;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@
   &__nav_link {
     display: flex;
     text-decoration: none;
-    color: $nav__link-color;
+    color: $nav-link-color;
     height: 15px;
     letter-spacing: 0%;
 
@@ -33,7 +33,7 @@
     align-items: center;
     transition: all 300ms ease-in-out;
     &:hover {
-      color: $primary-blue;
+      color: $card-text-hover;
     }
 
     &.is-active {

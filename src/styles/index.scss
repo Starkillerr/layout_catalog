@@ -1,36 +1,35 @@
 @import 'vars';
 @import 'header';
-@import 'cards';
+@import 'card';
 @import 'stars';
 
 html {
   box-sizing: border-box;
-
-  --primary-blue: #00a0ff;
 }
 
 .catalog {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  gap: 48px 46px;
+  gap: 46px 48px;
 
-  padding: 50px 40px;
+  padding-top: 50px;
+  padding-bottom: $padding-bottom;
 }
 
-@media (min-width: 488px) {
+@media (min-width: $media-small) {
   .catalog {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $media-medium) {
   .catalog {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $media-big) {
   .catalog {
     grid-template-columns: repeat(4, 1fr);
   }
