@@ -10,10 +10,10 @@
   font-weight: $font-weight-regular;
   transition: all 300ms ease-in-out;
   &:hover {
+    transform: scale(1.2);
+    z-index: 10;
     &__name {
       color: $color-primary;
-      transform: scale(1.2);
-      z-index: 10;
     }
   }
 
@@ -32,10 +32,10 @@
   }
 
   &__name {
-    width: 166px;
-    height: 36px;
+    width: $card-name-width;
+    height: $card-name-heigth;
     font-size: $font-size-title;
-    line-height: 18px;
+    line-height: $card-name-lh;
     color: $color-text-dark;
   }
 
@@ -49,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: $price-margin;
     margin-top: auto;
   }
 
@@ -70,7 +70,7 @@
     padding: 0;
     cursor: pointer;
     width: auto;
-    height: 40px;
+    height: $button-heigth;
     font-weight: $font-weight-bold;
     color: $color-primary-hover;
     background-color: $color-primary;

@@ -11,10 +11,9 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  gap: 46px 48px;
+  gap: $gap;
 
-  padding-top: 50px;
-  padding-bottom: $padding-bottom;
+  padding: $padding-ver $padding-hor;
 }
 
 @media (min-width: $media-small) {

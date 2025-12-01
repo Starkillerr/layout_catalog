@@ -10,7 +10,7 @@ $max-stars: 5;
 
   @for $i from 1 through $max-stars {
     &--#{$i} {
-      &:nth-child(-n + #{$i}) {
+      .stars__star:nth-child(-n + #{$i}) {
         background-image: url(../images/star-active.svg);
       }
     }

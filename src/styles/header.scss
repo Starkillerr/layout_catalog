@@ -6,22 +6,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &__nav_list {
+  &__nav-list {
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
     list-style: none;
   }
-  &__nav_item {
+  &__nav-item {
     margin-right: 30px;
   }
 
-  &__nav_item:last-child {
+  &__nav-item:last-child {
     margin-right: 0;
   }
 
-  &__nav_link {
+  &__nav-link {
     display: flex;
     text-decoration: none;
     color: $nav-link-color;
